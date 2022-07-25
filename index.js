@@ -1,19 +1,19 @@
 const canvas = document.querySelector('canvas');
-console.log(gsap);
+
 const c = canvas.getContext('2d');
 
-canvas.width = innerWidth;
-canvas.height = innerHeight;
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
 // default projectile radius
 const projectile_radius = 3;
 
 const menu = document.querySelector('#menu');
-console.log('menu');
+
 const scoreEL = document.querySelector('#score');
 const scoreMenu = document.querySelector('#score-menu');
 const StartGameBtn = document.querySelector('#StartGameBtn');
-console.log(scoreMenu);
+
 class Player {
   constructor(x, y, radius, color) {
     this.x = x;
@@ -246,7 +246,7 @@ addEventListener('click', (event) => {
     ),
   );
   projectiles.forEach((projectile) => {
-    // console.log(projectiles)
+  
   });
 });
 
