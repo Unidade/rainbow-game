@@ -1,6 +1,7 @@
 const canvas = document.querySelector('canvas');
 
 const c = canvas.getContext('2d');
+const friction = 0.99;
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -8,13 +9,15 @@ canvas.height = window.innerHeight;
 // default projectile radius
 const projectile_radius = 3;
 
+
+// INTERFACE
 const menu = document.querySelector('#menu');
 
 const scoreEL = document.querySelector('#score');
 const scoreMenu = document.querySelector('#score-menu');
 const StartGameBtn = document.querySelector('#StartGameBtn');
+// ------
 
-const friction = 0.99;
 
 // middle of the screen coordinates
 const center_x = canvas.width / 2;
