@@ -6,10 +6,19 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Rainbow Game</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       * {
@@ -45,6 +54,7 @@
       }
       .rainbow {
         background: linear-gradient(to top, #1a1afd, #6666ffd0);
+        -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
         box-shadow: 0px 3px 5px black;
@@ -93,6 +103,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="index.js"></script>
+    <script src="src/classes.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>

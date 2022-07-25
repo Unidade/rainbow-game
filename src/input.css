@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  background-color: black;
+}
+div {
+  font-family: "Press Start 2P", cursive;
+}
+#center {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+  );
+  animation: rainbow 8s ease-in-out infinite;
+  border-radius: 20px;
+  background-size: 125% 125%;
+  box-shadow: 0px 0px 10px 1.5px rgba(255, 255, 255, 1);
+}
+.rainbow {
+  background: linear-gradient(to top, #1a1afd, #6666ffd0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  box-shadow: 0px 3px 5px black;
+  /* box-shadow: 1px 4px 5px black, -1px 0px 5px black; */
+}
+button:hover {
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.9);
+}
+
+/* https://stackoverflow.com/questions/54702124/rainbow-text-animation-using-only-css */
+@keyframes rainbow {
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
