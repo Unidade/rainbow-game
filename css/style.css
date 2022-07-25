@@ -677,6 +677,10 @@ div {
   font-family: "Press Start 2P", cursive;
 }
 
+#StartGameBtn {
+  color: white;
+}
+
 #center {
   background: linear-gradient(
     135deg,
