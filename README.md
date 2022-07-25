@@ -4,7 +4,7 @@ This is a basic **Shoot 'em up** game created with vanilla *javascript*, *html* 
 
 ## How to play
 
-Open index.html in a browser or play the [live version here]()
+Open index.html in a browser or play the [live version here](https://rainbowgame.netlify.app/)
 
 ## Attribution 
 
