@@ -56,7 +56,7 @@ function spawnEnemies() {
     const velocity = { x: cos, y: sin };
 
     enemies.push(new Enemy(x, y, radius, color, velocity));
-  }, 2500);
+  }, 1800);
 }
 let animationID;
 let score = 0;
